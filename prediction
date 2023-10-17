@@ -30,4 +30,4 @@ repo.create_file("README.md", "Add a link to your website", readme_content)
 
 print(f"Repository '{repository_name}' created with a link to your website.")
 
-Assist them <a href "https://ecogreenitrecycling.co.uk/computer-recycling/"> Computer Recycling </a>in enhancing their sales by leveraging predictive analysis of their historical data
+Assist them <a href "https://ecogreenitrecycling.co.uk/computer-recycling/"> Computer Recycling </a> in enhancing their sales by leveraging predictive analysis of their historical data
