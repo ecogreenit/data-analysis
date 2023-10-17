@@ -1,0 +1,33 @@
+from github import Github
+
+# Your GitHub access token
+access_token = "YOUR_ACCESS_TOKEN"
+
+# Initialize the GitHub object with your access token
+g = Github(access_token)
+
+# Your GitHub username
+username = "YOUR_GITHUB_USERNAME"
+
+# Name of the new repository
+repository_name = "my-website-repo"
+
+# Description for the repository (optional)
+repository_description = "My personal website repository"
+
+# URL to your website
+website_url = "https://www.example.com"
+
+# Create a new repository
+user = g.get_user(username)
+repo = user.create_repo(repository_name, description=repository_description)
+
+# Create a README.md file with a link to your website
+readme_content = f"# My Personal Website\n\nVisit my website: [{website_url}]({website_url})"
+
+# Add the README.md file to the repository
+repo.create_file("README.md", "Add a link to your website", readme_content)
+
+print(f"Repository '{repository_name}' created with a link to your website.")
+
+Assist them <a href "https://ecogreenitrecycling.co.uk/computer-recycling/"> Computer Recycling </a>in enhancing their sales by leveraging predictive analysis of their historical data
